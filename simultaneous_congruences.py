@@ -2,22 +2,16 @@ def main():
 
     import sys
 
-    def gcd(a, b):  # standard GCD function using eulcidean algorithm
+    def gcd(a, b):    
 
-        if b > a:
+        if b > a:          
             a , b = b, a
 
-        while True:
-
-            q = int(a / b)
-            r = a - (b*q)
-
-            if r == 0:
-                return int(b)
-
-            else:
-                a = (a-r)/q
-                b = r
+        while True:         
+            if b == 0:    
+                return int(a)
+            else:             
+                b, a = a % b, b
 
     def linear_cong(a,b,c): # linear congruence function for solving the congruences N_i*x ≅ 1 (mod m)
                             # where N_i is N divided by m_i

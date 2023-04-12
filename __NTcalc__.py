@@ -1,4 +1,4 @@
-import CRT                    # import all previous programs
+import simultaneous_congruences                    # import all previous programs
 import euler_totient
 import factorization
 import gcd
@@ -22,7 +22,7 @@ while True:     #The calculator works until the user quits
         print("\nTHANK YOUU FOR USING NT CALCULATOR!")
         break
     elif message == 1:
-        CRT.main()
+        simultaneous_congruences.main()
     elif message == 2:
         euler_totient.main()
     elif message == 3:

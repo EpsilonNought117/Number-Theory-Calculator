@@ -1,22 +1,16 @@
 def main():
     import functools
 
-    def gcd(a, b): #GCD using euclidean algorithm 
+    def gcd(a, b):    
 
-        if b > a:
+        if b > a:          
             a , b = b, a
 
-        while True:
-
-            q = int(a / b)
-            r = a - (b*q)
-
-            if r == 0:
-                return int(b)
-
-            else:
-                a = (a-r)/q
-                b = r
+        while True:         
+            if b == 0:    
+                return int(a)
+            else:             
+                b, a = a % b, b
 
     def linear_cong(a,b,c): #solution of linear congruence using extended eulcidean algorithm
 
